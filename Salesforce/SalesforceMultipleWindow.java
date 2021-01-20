@@ -37,18 +37,16 @@ public class SalesforceMultipleWindow {
 	
 	/* user selection logic ends here*/
 	/*There is a frame in the webpage and lets identify the frame and switch to it*/
-	/* WebElement frame1= driver.findElement(By.xpath("//iframe[@title='New User ~ Salesforce - Developer Edition']"));
+	 WebElement frame1= driver.findElement(By.xpath("//iframe[@title='New User ~ Salesforce - Developer Edition']"));
      driver.switchTo().frame(frame1);
      driver.findElement(By.id("name_firstName")).clear();/*jus to clr the field*/
-    /* driver.findElement(By.id("name_firstName")).sendKeys("Shravan");
+     driver.findElement(By.id("name_firstName")).sendKeys("Shravan");
      driver.findElement(By.xpath("//img[@alt='Individual Lookup (New Window)']")).click();
      Thread.sleep(3500);
      /*In this instance, another window is opened.  there r two windows now
       * using window handles we r getting all the windows information and 
-      * storing in a set
-      * List and Set are used to store multiple values.  one diff is list accepts 
-      * duplicates whereas no duplicates are allowed in  set*/
-     /*Set <String> wins= driver.getWindowHandles();
+      * storing in a set*/
+     Set <String> wins= driver.getWindowHandles();
      //iterator will place the cursor at the starting position of the set
      Iterator <String> iter= wins.iterator();
      String first= iter.next();
@@ -58,7 +56,7 @@ public class SalesforceMultipleWindow {
      driver.findElement(By.id("lksrch")).sendKeys("Renu");
      driver.close();//closes current window
      driver.switchTo().defaultContent();//or window(first)
-     */
+     
      
 	
 	
