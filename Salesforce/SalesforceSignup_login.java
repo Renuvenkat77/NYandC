@@ -14,8 +14,8 @@ public class SalesforceSignup_login {
 		driver.get("https://developer.salesforce.com/");	
 		driver.manage().window().maximize();
 		String hphandle= driver.getWindowHandle();
-		//WebElement popupclose=driver.findElement(By.id("dfc-cookie-info-bar-button"));
-		//popupclose.click();
+		WebElement popupclose=driver.findElement(By.id("dfc-cookie-info-bar-button"));
+		popupclose.click();
 		WebElement signup= driver.findElement(By.xpath("//a[@class='btn btn-success']"));
 	    signup.click();
 	WebElement firstname= driver.findElement(By.id("first_name"));
